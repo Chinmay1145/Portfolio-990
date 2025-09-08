@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website of Chinmay Pingle - Web Developer">
+    <meta name="keywords" content="web development, portfolio, developer">
+    <meta name="author" content="Chinmay Pingle">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Chinmay Pingle - Portfolio Website</title>
+</head>
+<body>
+    <nav>
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+            Chinmay <span>Pingle</span>
+        </div>
+        <div class="nav-container">
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#intro">Introduction</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#intro">Introduction</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>    
+        </div>
+    </nav>
+    <section id="home">
+        <div class="main-container">
+            <div class="content">
+                <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600">Hey I'm <span>Chinmay Pingle</span></h1>
+                <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="800" class="typewriter">I'm a <span class="typewriter-text"></span><label for="">|</label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1000">I am a passionate front end developer with a keen interest in creating innovative solutions. With a strong foundation in web development and programming, I strive to build user-friendly and efficient applications that make a difference.</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/your-profile" target="_blank">
+                        <i class="fa-brands fa-linkedin" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200"></i>
+                    </a>
+                    <a href="https://github.com/your-profile" target="_blank">
+                        <i class="fa-brands fa-github" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"></i>
+                    </a>
+                    <a href="https://facebook.com/your-profile" target="_blank">
+                        <i class="fa-brands fa-facebook" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"></i>
+                    </a>
+                    <a href="https://twitter.com/your-profile" target="_blank">
+                        <i class="fa-brands fa-twitter" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"></i>
+                    </a>
+                </div>
+                <button onclick="window.open('your_cv.pdf', '_blank')" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1700">Download CV</button>
+            </div>
+            <div class="image" data-aos="zoom-in" data-aos-duration="2000">
+                <img src="Chinmay.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <h2 data-aos="fade-down" data-aos-duration="1500">About Me</h2>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right" data-aos-duration="1500">
+                    <img src="about-image.jpeg" alt="About Me">
+                </div>
+                <div class="about-text" data-aos="fade-left" data-aos-duration="1500">
+                    <h3>Who am I?</h3>
+                    <p>I am a passionate front end developer with a keen interest in creating innovative solutions. With a strong foundation in web development and programming, I strive to build user-friendly and efficient applications that make a difference.</p>
+                    <div class="about-details">
+                        <div class="detail" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                            <span>Name:</span> Chinmay Pingle
+                        </div>
+                        <div class="detail" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                            <span>Age:</span> 21 Years
+                        </div>
+                        <div class="detail" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                            <span>Location:</span> Nagpur, India
+                        </div>
+                        <div class="detail" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                            <span>Email:</span> chinmay@example.com
+                        </div>
+                        <div class="detail" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+                            <span>Education:</span> higher education done from new english high school and junior college 2020 to 2022
+                        </div>
+                        <div class="detail" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                            <span>Higher Education:</span> completed bachelor of commerce in computer application from dhanwate national college 2022 to 2025
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <h2 class="section-title" data-aos="fade-down" data-aos-duration="1500">My Skills</h2>
+        <div class="skills-container">
+            <!-- Frontend Skills -->
+            <div class="skill-card" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="100">
+                <div class="skill-icon">
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+                <h3>HTML5</h3>
+                <div class="skill-level">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+                <span class="percentage">90%</span>
+            </div>
+    
+            <div class="skill-card" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="200">
+                <div class="skill-icon">
+                    <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <h3>CSS3</h3>
+                <div class="skill-level">
+                    <div class="progress" style="width: 85%"></div>
+                </div>
+                <span class="percentage">85%</span>
+            </div>
+    
+            <div class="skill-card" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="300">
+                <div class="skill-icon">
+                    <i class="fa-brands fa-js"></i>
+                </div>
+                <h3>JavaScript</h3>
+                <div class="skill-level">
+                    <div class="progress" style="width: 80%"></div>
+                </div>
+                <span class="percentage">80%</span>
+            </div>
+    
+            <div class="skill-card" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="400">
+                <div class="skill-icon">
+                    <i class="fa-brands fa-react"></i>
+                </div>
+                <h3>React</h3>
+                <div class="skill-level">
+                    <div class="progress" style="width: 75%"></div>
+                </div>
+                <span class="percentage">75%</span>
+            </div>
+    
+            <div class="skill-card" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="500">
+                <div class="skill-icon">
+                    <i class="fa-brands fa-vuejs"></i>
+                </div>
+                <h3>Vue.js</h3>
+                <div class="skill-level">
+                    <div class="progress" style="width: 70%"></div>
+                </div>
+                <span class="percentage">70%</span>
+            </div>
+    
+            <div class="skill-card" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="600">
+                <div class="skill-icon">
+                    <i class="fa-brands fa-sass"></i>
+                </div>
+                <h3>Sass/SCSS</h3>
+                <div class="skill-level">
+                    <div class="progress" style="width: 80%"></div>
+                </div>
+                <span class="percentage">80%</span>
+            </div>
+    
+            <!-- Backend Skills -->
+            <div class="skill-card" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="700">
+                <div class="skill-icon">
+                    <i class="fa-brands fa-node-js"></i>
+                </div>
+                <h3>Node.js</h3>
+                <div class="skill-level">
+                    <div class="progress" style="width: 75%"></div>
+                </div>
+                <span class="percentage">75%</span>
+            </div>
+    
+            <div class="skill-card" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="800">
+                <div class="skill-icon">
+                    <i class="fa-brands fa-python"></i>
+                </div>
+                <h3>Python</h3>
+                <div class="skill-level">
+                    <div class="progress" style="width: 85%"></div>
+                </div>
+                <span class="percentage">85%</span>
+            </div>
+    
+            <div class="skill-card" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="900">
+                <div class="skill-icon">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <h3>MongoDB</h3>
+                <div class="skill-level">
+                    <div class="progress" style="width: 70%"></div>
+                </div>
+                <span class="percentage">70%</span>
+            </div>
+    
+            <!-- Additional Skills -->
+            <div class="skill-card" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="1000">
+                <div class="skill-icon">
+                    <i class="fa-brands fa-git-alt"></i>
+                </div>
+                <h3>Git</h3>
+                <div class="skill-level">
+                    <div class="progress" style="width: 85%"></div>
+                </div>
+                <span class="percentage">85%</span>
+            </div>
+    
+            <div class="skill-card" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="1100">
+                <div class="skill-icon">
+                    <i class="fa-brands fa-docker"></i>
+                </div>
+                <h3>Docker</h3>
+                <div class="skill-level">
+                    <div class="progress" style="width: 65%"></div>
+                </div>
+                <span class="percentage">65%</span>
+            </div>
+    
+            <div class="skill-card" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="1200">
+                <div class="skill-icon">
+                    <i class="fa-solid fa-cloud"></i>
+                </div>
+                <h3>AWS</h3>
+                <div class="skill-level">
+                    <div class="progress" style="width: 60%"></div>
+                </div>
+                <span class="percentage">60%</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <h2 data-aos="fade-down" data-aos-duration="1500">My Services</h2>
+        <div class="services-container">
+            <div class="service-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Creating modern and responsive websites using the latest technologies and best practices.</p>
+            </div>
+
+            <div class="service-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Responsive Design</h3>
+                <p>Developing websites that work seamlessly across all devices and screen sizes.</p>
+            </div>
+
+            <div class="service-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">
+                <div class="service-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3>Backend Development</h3>
+                <p>Building robust and scalable server-side applications and APIs.</p>
+            </div>
+
+            <div class="service-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
+                <div class="service-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Database Design</h3>
+                <p>Creating efficient and well-structured databases for optimal performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <h2 data-aos="fade-down" data-aos-duration="1500">My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100">
+                <div class="project-image">
+                    <img src="project1.jpg" alt="Project 1">
+                </div>
+                <div class="project-content">
+                    <h3>Project Name 1</h3>
+                    <p>A brief description of your first project. Explain what technologies you used and what problems you solved.</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/your-username/project1" target="_blank">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="https://chinmay1145.github.io/Elegant/" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
+                <div class="project-image">
+                    <img src="project2.jpg" alt="Project 2">
+                </div>
+                <div class="project-content">
+                    <h3>Project Name 2</h3>
+                    <p>Description of your second project. Highlight the key features and your role in development.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/your-username/project2" target="_blank">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="https://project2-demo.com" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">
+                <div class="project-image">
+                    <img src="project3.jpg" alt="Project 3">
+                </div>
+                <div class="project-content">
+                    <h3>Your GitHub Project Name</h3>
+                    <p>Detailed description of your GitHub project highlighting its key features, technologies used, and your role in development.</p>
+                    <div class="project-tech">
+                        <span>Technology 1</span>
+                        <span>Technology 2</span>
+                        <span>Technology 3</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/your-username/project-repo" target="_blank">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="https://your-demo-link.com" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h2 data-aos="fade-down" data-aos-duration="1500">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1500">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="info">
+                            <h3>Phone</h3>
+                            <p>+91 1234567890</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <h3>Email</h3>
+                            <p>chinmay@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info">
+                            <h3>Location</h3>
+                            <p>Nagpur, India</p>
+                        </div>
+                    </div>
+                </div>
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                     <!-- Replace with your Access Key -->
+                    <input type="hidden" name="access_key" value="97b4931b-1e4d-4d2c-b11d-89b2832440d5">
+
+                    <!-- Form Inputs. Each input must have a name="" attribute -->
+                    <input type="text" name="name" required>
+                    <input type="email" name="email" required>
+                    <textarea name="message" required></textarea>
+
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <!-- Custom Confirmation / Success Page -->
+                    <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+                    <button type="submit">Submit Form</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,
+            duration: 1000,
+            easing: 'ease',
+            delay: 100,
+            once: true,
+            mirror: false,
+            anchorPlacement: 'top-bottom'
+        });
+    </script>
+    
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo" data-aos="fade-up" data-aos-duration="1500">
+                    Chinmay <span>Pingle</span>
+                </div>
+                <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">Web Developer & Designer</p>
+                
+                <div class="footer-social" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                    <a href="https://linkedin.com/in/your-profile" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/your-profile" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://facebook.com/your-profile" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/your-profile" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-links" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                <div class="footer-links-column">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#intro">Introduction</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="footer-links-column">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-phone"></i> +91 7057491596</p>
+                    <p><i class="fas fa-envelope"></i> chinmaypingle83@gmail.com </p>
+                    <p><i class="fas fa-map-marker-alt"></i> Nagpur, India</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Chinmay Pingle. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
